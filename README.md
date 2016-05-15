@@ -31,6 +31,16 @@ Pushing a new value to `name$` will update the view accordingly. Additionally, r
 will immediately invoke the new one and replace the view. The component will render a `<noscript />` until all
 observables have passed at least one value to the subscriber.
 
+Subscribe also allows you just wrap your function components like so.
+
+```js
+function MyComponent ({message, name}) {
+  return <span>{props.message}, {props.name}</span>
+}
+
+<Subscribe message={message$} name={name$}>{MyComponent}</Subscribe>
+```
+
 ### Inspiration
 
 [React Observable Subscribe](https://github.com/jayphelps/react-observable-subscribe)
