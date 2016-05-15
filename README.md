@@ -1,12 +1,11 @@
 # React Observable Subscribe 2
 
 Inspired by Jay Phelps' [React Observable Subscribe](https://github.com/jayphelps/react-observable-subscribe), this library exposes a single
-component - `<Subscribe>` - which consumes observables as props and maps them to a function. Handles updates
-from both React and the Observable props.
+component - `<Subscribe>` - which consumes observables as props and maps them to a function.
 
 ### Wat?
 
-So I stole a bunch of code that I wrote from [Yolk.js](https://github.com/garbles/yolk) to make this happen.
+So I stole a bunch of code that I wrote from [Yolk.js](https://github.com/garbles/yolk) to make this happen. Here's an example.
 
 ```js
 import {render} from 'react-dom'
