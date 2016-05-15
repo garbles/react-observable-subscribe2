@@ -21,7 +21,7 @@ export function createProps (obj) {
   while (++i < len) {
     const key = keys[i]
     const value = obj[key]
-    values[i] = value::asObservable()
+    values[i] = value::asObservable()::distinctUntilChanged()
   }
 
   return Observable::combineLatestStatic(values, function combineTheThings (...args) {
@@ -34,5 +34,5 @@ export function createProps (obj) {
     }
 
     return newObj
-  })::distinctUntilChanged()
+  })
 }
