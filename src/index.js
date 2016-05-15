@@ -57,3 +57,5 @@ export class Subscribe extends React.Component {
     return this.state.vtree
   }
 }
+
+export default Subscribe
