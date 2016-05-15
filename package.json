@@ -1,0 +1,40 @@
+{
+  "name": "react-observable-subscribe2",
+  "version": "0.0.0",
+  "description": "A React component that consumes observables as props and unwraps them",
+  "main": "lib/index.js",
+  "files": [
+    "es6",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build",
+    "clean": "nwb clean",
+    "start": "nwb serve",
+    "test": "nwb test",
+    "test:watch": "nwb test --server",
+    "release:patch": "nwb build && npm version patch && npm publish"
+  },
+  "dependencies": {
+    "invariant": "2.2.1",
+    "is-observable": "0.2.0",
+    "lodash": "4.12.0",
+    "react": "^15.0.2",
+    "react-dom": "^15.0.2",
+    "rxjs": "5.0.0-beta.7"
+  },
+  "peerDependencies": {
+    "react": "^15.0 || ^0.14"
+  },
+  "devDependencies": {
+    "nwb": "0.9.x"
+  },
+  "author": "Gabe Scholz",
+  "license": "MIT",
+  "repository": "https://github.com/garbles/react-observable-subscribe-2",
+  "keywords": [
+    "react-component",
+    "rxjs"
+  ]
+}
